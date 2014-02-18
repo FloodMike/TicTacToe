@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link rel="icon" href="images\favicon.png" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style\grid.css">
+        <link rel="stylesheet" type="text/css" href="style\stylesheet.css">
+        <script src="jquery-1.11.0.min.js"></script>
+        <script type='text/javascript' src="tic-tac-toe-functions.js"></script>
+    </head>
+    <header>
+        <div class="row">
+            <div class="twelve columns">This is a Tic-Tac-Toe Game... which, hopefully, you'll never win.</div>
+        </div>
+    </header>
+    <body>
+        <div class="row">
+            <div class="three columns"></div>
+            <div class="four columns">
+                <form name="tic">
+                    <div class="row">
+                        <div class="four columns box" id="topLeft" name="sqr1" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="topMiddle" name="sqr2" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="topRight" name="sqr3" onClick="fillBox(this);"></div>
+                    </div>
+                    <div class="row">
+                        <div class="four columns box" id="middleLeft" name="sqr4" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="middleMiddle" name="sqr5" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="middleRight" name="sqr6" onClick="fillBox(this);"></div>
+                    </div>
+                    <div class="row">
+                        <div class="four columns box" id="bottomLeft" name="sqr7" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="bottomMiddle" name="sqr8" onClick="fillBox(this);"></div>
+                        <div class="four columns box" id="bottomRight" name="sqr9" onClick="fillBox(this);"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="four columns">
+                <div class="row">
+                    <div class="four columns">Wins</div>
+                    <div class="four columns">Losses</div>
+                    <div class="four columns">Draws</div>
+                </div>
+                <div class="row">
+                    <div class="four columns" id="wins"></div>
+                    <div class="four columns" id="losses"></div>
+                    <div class="four columns" id="draws"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
